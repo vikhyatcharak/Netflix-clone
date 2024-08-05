@@ -15,7 +15,6 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: max(100vw,1900px);
-
 }
 .black{
     height:94vh;
@@ -34,7 +33,6 @@ body{
     padding-bottom: 200px;
     max-width: 77vw;
     margin: auto;
-
 }
 .main header img{
     width: 150px;
@@ -150,16 +148,16 @@ select option{
     position: relative;
 }
 .first .tv img{
-    width:min(500px,40vw);
+    width:500px;
     position: relative;
     z-index: 1;
 }
 .first .tv video{
-    width: min(299px, 25vw);
+    width:299px;
     object-fit: cover;
     position: absolute;
-    top: min(80px, 6.8vw);
-    left: min(80px,7.1vw);
+    top: 80px;
+    left:80px;
 }
 .second{
     display: flex;
@@ -197,20 +195,20 @@ select option{
     border: 1px solid white;
     border-radius: 7px;
     gap: 10px;
-    width: min(400px,22vw);
+    width: 400px;
     padding: 7px;
     grid-row: 1/2;
     grid-column: 1/2;
-    margin-top: min(300px,20vw);
+    margin-top: 300px;
 }
 .second .tv img{
-    width:min(700px,40vw);
+    width:700px;
     border-radius: 3px;
     grid-row: 1/2;
     grid-column: 1/2;
 }
 .second .tv .box img{
-    width: min(50px,2vw);
+    width:50px;
 }
 .second .tv .box .smi{
     display: flex;
@@ -220,13 +218,13 @@ select option{
 .second .tv .box .smi .txt{
     display: flex;
     flex-direction: column;
-    font-size: min(20px,1vw);
+    font-size: 20px;
 }
 .second .tv .box .smi .txt :nth-child(2){
     color: blue;
 }
 .fourth img{
-    width:min(700px,40vw);
+    width:700px;
     border-radius: 3px;
 }
 .fifth .content{
@@ -235,7 +233,6 @@ select option{
     align-items: center;
     margin-top: 70px;
     margin-bottom: 20px;
-
 }
 .fifth .flex{
     display: flex;
@@ -308,4 +305,106 @@ footer p{
     margin-top: 15px;
     margin-bottom: 50px;
 }
-
+@media  screen and (max-width:1300px) {
+    footer .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .second{
+        flex-wrap: wrap-reverse;
+    }
+    .main header{
+        flex-wrap: wrap;
+        padding-bottom: 150px;
+    }
+    .main .buttons{
+        flex-wrap: wrap;
+    }
+}
+@media  screen and (max-width:720px) {
+    .first .tv img{
+        width:300px
+    }
+    .first .tv video{
+        width:170px;
+        top:40px;
+        left:70px;
+    }
+    .content> :nth-child(1){
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .content> :nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .content> :nth-child(3){
+        font-size: 10px;
+    }
+    .main .buttons button{
+        font-size: 10px;
+        padding: 0px 12px;
+        border-radius: 4px;
+    }
+    .main header img{
+        width:100px;
+    }
+    .first .text> :nth-child(1){
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .first .text> :nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .second .text> :nth-child(1){
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .second .text> :nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .fifth .content{
+        font-size: 30px;
+    }
+    .fifth .flex .bar{
+        font-size: 18px;
+    }
+    .signIn .div{
+        font-size: 12px;
+    }
+    .signIN input{
+        font-size: 12px;
+    }
+    .signIN button{
+        font-size: 14px;
+    }
+    .second .tv img{
+        width:440px;
+    }
+    .second .tv .box img{
+        width:30px;
+    }
+    .second .tv .box .smi .txt{
+        font-size: 16px;
+    }
+    .second .tv .box{
+        border-radius: 5px;
+        gap: 8px;
+        width: 300px;
+        padding: 7px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-top: 180px;
+    }
+    .fourth img{
+        width:440px;
+    }
+}
